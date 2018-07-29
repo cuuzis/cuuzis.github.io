@@ -21,7 +21,7 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/readme/README.md"
+              "src/README.md"
             ],
             "styles": [
               "src/styles.css"
