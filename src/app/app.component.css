@@ -1,4 +1,4 @@
-.timeline ul li::after {
+.timeline ul li::before {
 	content: '';
 	position: absolute;
 	left: 12px;
@@ -7,4 +7,8 @@
 	width: 24px;
 	border-radius: 50%;
 	background: rgb(98, 109, 121);
+}
+
+li {
+    list-style-type: none;
 }

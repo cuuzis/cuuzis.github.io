@@ -18,43 +18,13 @@
   <mat-tab label="Timeline">
     <div class="timeline">
     <ul>
-        <li>
-          <div>
-            <p>1991</p>
-            <p>Born</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p>2011</p>
-            <p>Graduated Riga State Gymnasium No.1</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p>2011-2013</p>
-            <p>Programming and Administration of Computer Networks at Latvijas Universitāte</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p>2011-2015</p>
-            <p>Bachelor's degree in Computer Science at Latvijas Universitāte</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p>2015-2017</p>
-            <p>Master's degree in Computer Science at Free University of Bozen - Bolzano</p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <p>Nov 2017 – Dec 2017</p>
-            <p>Research Assistant at Free University of Bozen - Bolzano</p>
-          </div>
-        </li>
-    </ul>
+      <li *ngFor="let event of events">
+            <div>
+              <p>{{event.year}}</p>
+              <p>{{event.description}}</p>
+            </div>
+      </li>
+      </ul>
   </div>
   </mat-tab>
   <mat-tab label="Competencies"> In progress... </mat-tab>
